@@ -1,0 +1,6 @@
+<!--components/playlist/playlist.wxml-->
+<view class='playlist-container' bindtap="JumpMusicList">
+  <image class='playlist-container-img' src='{{playlist.picUrl}}'></image>
+  <text class='playlist-container-playCount'>{{_count}}</text>
+  <view class='playlist-container-name'>{{playlist.name}}</view>
+</view>

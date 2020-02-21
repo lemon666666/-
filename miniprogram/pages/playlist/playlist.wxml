@@ -1,0 +1,16 @@
+<!--pages/playlist/playlist.wxml-->
+
+<swiper indicator-dots="true" indicator-color="rgb(255,255,255)" 
+        indicator-active-color="#d43c33" autoplay="true" circular="true">
+  <block wx:for="{{swiperUrl}}" wx:key="url">
+    <swiper-item>
+      <image class='swiper-img' src='{{item.fileid}}' mode='widthFix'></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='playlist-container'>
+  <block wx:for="{{playlist}}" wx:key="_id">
+    <components-palylist playlist="{{item}}"></components-palylist>
+  </block>
+</view>

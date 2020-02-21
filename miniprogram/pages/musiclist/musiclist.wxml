@@ -1,0 +1,13 @@
+<view class="detail-container" style="background: url({{listInfo.coverImgUrl}})"></view>
+
+<view class="detail-mask"></view>
+
+<view class="detail-info">
+    <image src="{{listInfo.coverImgUrl}}" class="detail-img"></image>
+    <view class="detail">
+        <view class="detail-nm">{{listInfo.name}}</view>
+    </view>
+</view>
+
+
+<components-musiclist musiclist="{{musiclist}}"></components-musiclist>
